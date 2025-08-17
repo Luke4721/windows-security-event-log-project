@@ -1,0 +1,4 @@
+
+index=main source="GUIDE_Test.zip:*" FileName!=""
+| stats count as Executions by FileName, Sha256, DeviceName
+| sort - Executions desc

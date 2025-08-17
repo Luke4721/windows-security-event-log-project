@@ -1,0 +1,4 @@
+
+index=main source="GUIDE_Test.zip:*" MitreTechniques!=""
+| stats count as Alerts by MitreTechniques, Category
+| sort - Alerts desc

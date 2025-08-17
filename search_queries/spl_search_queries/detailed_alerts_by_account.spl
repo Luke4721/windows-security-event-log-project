@@ -1,0 +1,6 @@
+
+index=main source="GUIDE_Test.zip:*"
+| fields AccountName, IpAddress, DeviceName, AlertTitle, IncidentGrade, Category, Timestamp
+| search AlertTitle!=""
+| table Timestamp AccountName IpAddress DeviceName AlertTitle IncidentGrade Category
+| sort - Timestamp desc

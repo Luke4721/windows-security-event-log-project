@@ -1,0 +1,4 @@
+
+index=main source="GUIDE_Test.zip:*" Category="Logon"
+| stats dc(CountryCode) as CountryCount values(CountryCode) by AccountName
+| where CountryCount > 1

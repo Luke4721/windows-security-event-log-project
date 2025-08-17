@@ -1,0 +1,4 @@
+
+index=main source="GUIDE_Test.zip:*"
+| stats count as Alerts by DeviceName, Category
+| sort - Alerts desc

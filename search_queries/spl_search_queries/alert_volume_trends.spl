@@ -1,0 +1,3 @@
+
+index=main source="GUIDE_Test.zip:*"
+| timechart span=1h count as Alerts

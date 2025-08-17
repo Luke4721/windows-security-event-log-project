@@ -1,0 +1,4 @@
+
+index=main source="GUIDE_Test.zip:*" Roles="*Admin*"
+| stats count as PrivRoleEvents by AccountName, DeviceName, Category
+| sort - PrivRoleEvents desc
